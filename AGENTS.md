@@ -1,4 +1,4 @@
-# Agent Guidelines for Fineye DS
+# Agent Guidelines for fineye DS
 
 ## Build/Lint/Test Commands
 
