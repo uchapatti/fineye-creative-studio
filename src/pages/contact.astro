@@ -1,0 +1,585 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Contact Us - Fineye Creative Studio" description="Get in touch with Fineye Creative Studio. We're based in Gqeberha, South Africa and ready to discuss your next creative project.">
+	<a href="#main" class="skip-link">Skip to main content</a>
+
+	<header>
+		<nav class="container">
+			<div class="nav-content">
+				<a href="/" class="logo">
+					<strong>Fineye</strong>
+				</a>
+				<ul class="nav-links">
+					<li><a href="/">Home</a></li>
+					<li><a href="/work">Work</a></li>
+					<li><a href="/services">Services</a></li>
+					<li><a href="/about">About</a></li>
+					<li><a href="/contact" class="active">Contact</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+	<main id="main">
+		<section class="page-hero">
+			<div class="container">
+				<h1>Get in Touch</h1>
+				<p>Ready to start your creative journey? We'd love to hear about your project.</p>
+			</div>
+		</section>
+
+		<section class="contact-section">
+			<div class="container">
+				<div class="contact-content">
+					<div class="contact-info">
+						<h2>Let's Start a Conversation</h2>
+						<p>Whether you have a clear vision or just a spark of an idea, we're here to help bring it to life. Reach out and let's discuss how we can work together.</p>
+
+						<div class="contact-methods">
+							<div class="contact-method">
+								<div class="method-icon">📧</div>
+								<div class="method-details">
+									<h3>Email Us</h3>
+									<p><a href="mailto:hello@fineye.co.za">hello@fineye.co.za</a></p>
+									<p>We typically respond within 24 hours</p>
+								</div>
+							</div>
+
+							<div class="contact-method">
+								<div class="method-icon">📍</div>
+								<div class="method-details">
+									<h3>Visit Our Studio</h3>
+									<p>Gqeberha, South Africa</p>
+									<p>By appointment only</p>
+								</div>
+							</div>
+
+							<div class="contact-method">
+								<div class="method-icon">📞</div>
+								<div class="method-details">
+									<h3>Call Us</h3>
+									<p>+27 XX XXX XXXX</p>
+									<p>Mon-Fri, 9AM-5PM SAST</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="contact-process">
+							<h3>What Happens Next?</h3>
+							<ol>
+								<li><strong>Initial Consultation:</strong> We'll discuss your project and goals</li>
+								<li><strong>Proposal:</strong> We'll provide a detailed project proposal</li>
+								<li><strong>Kickoff:</strong> Once approved, we'll begin the creative process</li>
+								<li><strong>Delivery:</strong> We'll deliver your project on time and on budget</li>
+							</ol>
+						</div>
+					</div>
+
+					<div class="contact-form">
+						<form action="#" method="POST">
+							<div class="form-group">
+								<label for="name">Full Name *</label>
+								<input type="text" id="name" name="name" required>
+							</div>
+
+							<div class="form-group">
+								<label for="email">Email Address *</label>
+								<input type="email" id="email" name="email" required>
+							</div>
+
+							<div class="form-group">
+								<label for="company">Company/Organization</label>
+								<input type="text" id="company" name="company">
+							</div>
+
+							<div class="form-group">
+								<label for="project-type">Project Type</label>
+								<select id="project-type" name="project-type">
+									<option value="">Select a project type</option>
+									<option value="brand-identity">Brand Identity</option>
+									<option value="digital-design">Digital Design</option>
+									<option value="strategy">Strategic Communication</option>
+									<option value="technical">Technical Solutions</option>
+									<option value="other">Other</option>
+								</select>
+							</div>
+
+							<div class="form-group">
+								<label for="budget">Budget Range</label>
+								<select id="budget" name="budget">
+									<option value="">Select budget range</option>
+									<option value="under-10k">Under R10,000</option>
+									<option value="10k-25k">R10,000 - R25,000</option>
+									<option value="25k-50k">R25,000 - R50,000</option>
+									<option value="50k-100k">R50,000 - R100,000</option>
+									<option value="over-100k">Over R100,000</option>
+								</select>
+							</div>
+
+							<div class="form-group">
+								<label for="timeline">Timeline</label>
+								<select id="timeline" name="timeline">
+									<option value="">Select timeline</option>
+									<option value="asap">ASAP</option>
+									<option value="1-month">Within 1 month</option>
+									<option value="2-3-months">2-3 months</option>
+									<option value="3-6-months">3-6 months</option>
+									<option value="flexible">Flexible</option>
+								</select>
+							</div>
+
+							<div class="form-group">
+								<label for="message">Project Details *</label>
+								<textarea id="message" name="message" rows="6" placeholder="Tell us about your project, goals, and any specific requirements..." required></textarea>
+							</div>
+
+							<div class="form-group">
+								<label class="checkbox-label">
+									<input type="checkbox" name="newsletter" value="yes">
+									<span class="checkmark"></span>
+									Subscribe to our newsletter for creative insights and updates
+								</label>
+							</div>
+
+							<button type="submit" class="submit-button">Send Message</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="faq-section">
+			<div class="container">
+				<h2>Frequently Asked Questions</h2>
+				<div class="faq-grid">
+					<div class="faq-item">
+						<h3>How long does a typical project take?</h3>
+						<p>Project timelines vary depending on scope and complexity. A brand identity project might take 2-4 weeks, while a full website could take 6-8 weeks. We'll provide a detailed timeline during our initial consultation.</p>
+					</div>
+
+					<div class="faq-item">
+						<h3>Do you work with clients outside of South Africa?</h3>
+						<p>Absolutely! We work with clients globally and have experience with international brands. All our communication and collaboration tools support remote work.</p>
+					</div>
+
+					<div class="faq-item">
+						<h3>What information should I include in my inquiry?</h3>
+						<p>The more details you can provide about your project, the better. Include your goals, target audience, timeline, budget, and any specific requirements or references.</p>
+					</div>
+
+					<div class="faq-item">
+						<h3>Do you offer ongoing support after project completion?</h3>
+						<p>Yes! We offer maintenance packages and ongoing support to ensure your digital assets remain current and effective. We also provide training for your team.</p>
+					</div>
+
+					<div class="faq-item">
+						<h3>What's your payment structure?</h3>
+						<p>We typically work with a 50% upfront payment and 50% upon completion. For larger projects, we can arrange milestone-based payments. All pricing is transparent and agreed upon in advance.</p>
+					</div>
+
+					<div class="faq-item">
+						<h3>Can you work with our existing brand guidelines?</h3>
+						<p>Definitely! If you already have brand guidelines, we'll work within them. If you'd like to refresh or expand your brand, we can help with that too.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<div class="container">
+			<div class="footer-content">
+				<div class="footer-brand">
+					<strong>Fineye</strong>
+					<p>Creative studio based in Gqeberha, South Africa</p>
+				</div>
+				<div class="footer-links">
+					<ul>
+						<li><a href="/">Home</a></li>
+						<li><a href="/work">Work</a></li>
+						<li><a href="/services">Services</a></li>
+						<li><a href="/about">About</a></li>
+						<li><a href="/contact">Contact</a></li>
+					</ul>
+				</div>
+				<div class="footer-contact">
+					<p><a href="mailto:hello@fineye.co.za">hello@fineye.co.za</a></p>
+					<p>Gqeberha, South Africa</p>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<p>&copy; 2025 Fineye. All rights reserved.</p>
+			</div>
+		</div>
+	</footer>
+</Layout>
+
+<style>
+	/* Header styles - same as other pages */
+	header {
+		background: rgba(13, 74, 69, 0.95);
+		backdrop-filter: blur(10px);
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index: 100;
+		border-bottom: 1px solid rgba(201, 226, 225, 0.2);
+	}
+
+	.nav-content {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: var(--space-4) 0;
+	}
+
+	.logo {
+		color: white;
+		font-size: var(--text-xl);
+		font-weight: 700;
+		text-decoration: none;
+	}
+
+	.nav-links {
+		display: flex;
+		list-style: none;
+		gap: var(--space-8);
+	}
+
+	.nav-links a {
+		color: white;
+		text-decoration: none;
+		font-weight: 500;
+		transition: opacity 0.2s ease;
+	}
+
+	.nav-links a.active,
+	.nav-links a:hover {
+		opacity: 0.8;
+	}
+
+	.nav-links a.active {
+		border-bottom: 2px solid white;
+		padding-bottom: 2px;
+	}
+
+	/* Page Hero */
+	.page-hero {
+		padding: calc(var(--space-24) + var(--space-8)) 0 var(--space-12);
+		background: linear-gradient(135deg, var(--brand-primary) 0%, #0A3834 100%);
+		color: white;
+		text-align: center;
+	}
+
+	.page-hero h1 {
+		font-size: var(--text-4xl);
+		margin-bottom: var(--space-4);
+		font-weight: 700;
+	}
+
+	.page-hero p {
+		font-size: var(--text-lg);
+		opacity: 0.9;
+		max-width: var(--container-md);
+		margin: 0 auto;
+	}
+
+	/* Contact Section */
+	.contact-section {
+		padding: var(--space-16) 0;
+		background: white;
+	}
+
+	.contact-content {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: var(--space-12);
+	}
+
+	.contact-info h2 {
+		margin-bottom: var(--space-6);
+		color: var(--text-primary);
+	}
+
+	.contact-info > p {
+		margin-bottom: var(--space-8);
+		line-height: var(--leading-relaxed);
+		color: var(--text-secondary);
+		font-size: var(--text-lg);
+	}
+
+	.contact-methods {
+		margin-bottom: var(--space-8);
+	}
+
+	.contact-method {
+		display: flex;
+		align-items: flex-start;
+		margin-bottom: var(--space-6);
+	}
+
+	.method-icon {
+		font-size: var(--text-2xl);
+		margin-right: var(--space-4);
+		flex-shrink: 0;
+	}
+
+	.method-details h3 {
+		margin-bottom: var(--space-2);
+		color: var(--brand-primary);
+		font-size: var(--text-lg);
+	}
+
+	.method-details p {
+		margin: 0;
+		color: var(--text-secondary);
+		line-height: var(--leading-relaxed);
+	}
+
+	.method-details a {
+		color: var(--brand-primary);
+		text-decoration: none;
+		font-weight: 500;
+	}
+
+	.method-details a:hover {
+		text-decoration: underline;
+	}
+
+	.contact-process h3 {
+		margin-bottom: var(--space-4);
+		color: var(--text-primary);
+	}
+
+	.contact-process ol {
+		padding-left: var(--space-4);
+	}
+
+	.contact-process li {
+		margin-bottom: var(--space-3);
+		line-height: var(--leading-relaxed);
+		color: var(--text-secondary);
+	}
+
+	.contact-process strong {
+		color: var(--text-primary);
+	}
+
+	/* Contact Form */
+	.contact-form {
+		background: var(--neutral-50);
+		padding: var(--space-8);
+		border-radius: 8px;
+	}
+
+	.form-group {
+		margin-bottom: var(--space-6);
+	}
+
+	.form-group label {
+		display: block;
+		margin-bottom: var(--space-2);
+		font-weight: 500;
+		color: var(--text-primary);
+	}
+
+	.form-group input,
+	.form-group select,
+	.form-group textarea {
+		width: 100%;
+		padding: var(--space-3);
+		border: 2px solid var(--neutral-200);
+		border-radius: 4px;
+		font-size: var(--text-base);
+		font-family: inherit;
+		transition: border-color 0.2s ease;
+	}
+
+	.form-group input:focus,
+	.form-group select:focus,
+	.form-group textarea:focus {
+		outline: none;
+		border-color: var(--brand-primary);
+	}
+
+	.form-group textarea {
+		resize: vertical;
+		min-height: 120px;
+	}
+
+	.checkbox-label {
+		display: flex;
+		align-items: flex-start;
+		cursor: pointer;
+		font-weight: normal;
+		line-height: var(--leading-relaxed);
+	}
+
+	.checkbox-label input[type="checkbox"] {
+		position: absolute;
+		opacity: 0;
+		cursor: pointer;
+	}
+
+	.checkmark {
+		width: 20px;
+		height: 20px;
+		background: white;
+		border: 2px solid var(--neutral-200);
+		border-radius: 3px;
+		margin-right: var(--space-3);
+		flex-shrink: 0;
+		position: relative;
+		transition: all 0.2s ease;
+	}
+
+	.checkbox-label input:checked ~ .checkmark {
+		background: var(--brand-primary);
+		border-color: var(--brand-primary);
+	}
+
+	.checkbox-label input:checked ~ .checkmark::after {
+		content: "✓";
+		position: absolute;
+		color: white;
+		font-size: 14px;
+		font-weight: bold;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	.submit-button {
+		width: 100%;
+		background: var(--brand-primary);
+		color: white;
+		border: none;
+		padding: var(--space-4);
+		border-radius: 4px;
+		font-size: var(--text-lg);
+		font-weight: 600;
+		cursor: pointer;
+		transition: background-color 0.2s ease;
+	}
+
+	.submit-button:hover {
+		background: #0A3834;
+	}
+
+	/* FAQ Section */
+	.faq-section {
+		padding: var(--space-16) 0;
+		background: var(--neutral-50);
+	}
+
+	.faq-section h2 {
+		text-align: center;
+		margin-bottom: var(--space-12);
+		color: var(--text-primary);
+	}
+
+	.faq-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+		gap: var(--space-8);
+	}
+
+	.faq-item {
+		background: white;
+		padding: var(--space-6);
+		border-radius: 8px;
+		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+	}
+
+	.faq-item h3 {
+		margin-bottom: var(--space-3);
+		color: var(--brand-primary);
+		font-size: var(--text-lg);
+	}
+
+	.faq-item p {
+		color: var(--text-secondary);
+		line-height: var(--leading-relaxed);
+		margin: 0;
+	}
+
+	/* Footer */
+	footer {
+		background: var(--text-primary);
+		color: white;
+		padding: var(--space-12) 0 var(--space-6);
+	}
+
+	.footer-content {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		gap: var(--space-8);
+		margin-bottom: var(--space-8);
+	}
+
+	.footer-brand strong {
+		font-size: var(--text-xl);
+		display: block;
+		margin-bottom: var(--space-2);
+	}
+
+	.footer-links ul {
+		list-style: none;
+	}
+
+	.footer-links li {
+		margin-bottom: var(--space-2);
+	}
+
+	.footer-links a {
+		color: white;
+		opacity: 0.8;
+	}
+
+	.footer-links a:hover {
+		opacity: 1;
+	}
+
+	.footer-contact a {
+		color: white;
+	}
+
+	.footer-bottom {
+		border-top: 1px solid rgba(255, 255, 255, 0.1);
+		padding-top: var(--space-6);
+		text-align: center;
+		opacity: 0.6;
+	}
+
+	/* Responsive Design */
+	@media (max-width: 768px) {
+		.nav-links {
+			gap: var(--space-4);
+		}
+
+		.page-hero h1 {
+			font-size: var(--text-3xl);
+		}
+
+		.contact-content {
+			grid-template-columns: 1fr;
+			gap: var(--space-8);
+		}
+
+		.contact-method {
+			flex-direction: column;
+			text-align: center;
+		}
+
+		.method-icon {
+			margin-right: 0;
+			margin-bottom: var(--space-2);
+		}
+
+		.faq-grid {
+			grid-template-columns: 1fr;
+		}
+	}
+</style>

@@ -1,0 +1,196 @@
+---
+export interface Props {
+	title: string;
+	description: string;
+	image?: string;
+}
+
+const { title, description, image = "/og-image.jpg" } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content={description} />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		
+		<!-- Preconnect to Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+		
+		<!-- Open Graph -->
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		<meta property="og:image" content={image} />
+		<meta property="og:type" content="website" />
+		
+		<!-- Twitter Card -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content={title} />
+		<meta name="twitter:description" content={description} />
+		<meta name="twitter:image" content={image} />
+		
+		<title>{title}</title>
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+
+<style is:global>
+	:root {
+		/* Brand Colors */
+		--brand-primary: #0D4A45;
+		--brand-canvas: #C9E2E1;
+		--text-primary: #1A1A1A;
+		--text-secondary: #4A4A4A;
+		
+		/* Neutral Palette */
+		--neutral-50: #F5F7F8;
+		--neutral-100: #E0E3E5;
+		--neutral-200: #C9C9C9;
+		--neutral-300: #999999;
+		
+		/* Semantic Colors */
+		--success: #0D4A45;
+		--warning: #D4A017;
+		--error: #DC2626;
+		
+		/* Typography */
+		--font-heading: 'Space Grotesk', system-ui, sans-serif;
+		--font-body: 'Inter', system-ui, sans-serif;
+		
+		/* Font Sizes */
+		--text-xs: 0.75rem;    /* 12px */
+		--text-sm: 0.875rem;   /* 14px */
+		--text-base: 1rem;     /* 16px */
+		--text-lg: 1.125rem;   /* 18px */
+		--text-xl: 1.25rem;    /* 20px */
+		--text-2xl: 1.5rem;    /* 24px */
+		--text-3xl: 1.875rem;  /* 30px */
+		--text-4xl: 2.25rem;   /* 36px */
+		
+		/* Line Heights */
+		--leading-tight: 1.25;
+		--leading-normal: 1.5;
+		--leading-relaxed: 1.75;
+		
+		/* Spacing */
+		--space-1: 0.25rem;  /* 4px */
+		--space-2: 0.5rem;   /* 8px */
+		--space-3: 0.75rem;  /* 12px */
+		--space-4: 1rem;     /* 16px */
+		--space-6: 1.5rem;   /* 24px */
+		--space-8: 2rem;     /* 32px */
+		--space-12: 3rem;    /* 48px */
+		--space-16: 4rem;    /* 64px */
+		--space-24: 6rem;    /* 96px */
+		
+		/* Container */
+		--container-sm: 640px;
+		--container-md: 768px;
+		--container-lg: 1024px;
+		--container-xl: 1280px;
+		--container-2xl: 1536px;
+	}
+	
+	* {
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+	}
+	
+	html {
+		font-family: var(--font-body);
+		font-size: var(--text-base);
+		line-height: var(--leading-normal);
+		color: var(--text-primary);
+		background-color: var(--brand-canvas);
+		scroll-behavior: smooth;
+	}
+	
+	body {
+		min-height: 100vh;
+	}
+	
+	h1, h2, h3, h4, h5, h6 {
+		font-family: var(--font-heading);
+		font-weight: 600;
+		line-height: var(--leading-tight);
+		margin-bottom: var(--space-4);
+	}
+	
+	h1 { font-size: var(--text-4xl); }
+	h2 { font-size: var(--text-3xl); }
+	h3 { font-size: var(--text-2xl); }
+	h4 { font-size: var(--text-xl); }
+	h5 { font-size: var(--text-lg); }
+	h6 { font-size: var(--text-base); }
+	
+	p {
+		margin-bottom: var(--space-4);
+		max-width: 65ch;
+	}
+	
+	a {
+		color: var(--brand-primary);
+		text-decoration: none;
+		transition: opacity 0.2s ease;
+	}
+	
+	a:hover {
+		opacity: 0.8;
+	}
+	
+	img {
+		max-width: 100%;
+		height: auto;
+		display: block;
+	}
+	
+	.container {
+		width: 100%;
+		max-width: var(--container-xl);
+		margin: 0 auto;
+		padding: 0 var(--space-4);
+	}
+	
+	@media (min-width: 640px) {
+		.container {
+			padding: 0 var(--space-6);
+		}
+	}
+	
+	@media (min-width: 1024px) {
+		.container {
+			padding: 0 var(--space-8);
+		}
+	}
+	
+	/* Focus styles for accessibility */
+	:focus-visible {
+		outline: 2px solid var(--brand-primary);
+		outline-offset: 2px;
+	}
+	
+	/* Skip to main content link */
+	.skip-link {
+		position: absolute;
+		top: -40px;
+		left: 6px;
+		background: var(--brand-primary);
+		color: white;
+		padding: 8px;
+		text-decoration: none;
+		border-radius: 4px;
+		z-index: 1000;
+	}
+	
+	.skip-link:focus {
+		top: 6px;
+	}
+</style>
